@@ -1,0 +1,108 @@
+.two-collections{
+    width: 100%;
+}
+.two-collections .grid-container{
+    order: 0;
+    display: grid;
+    padding: 4em 1em 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 24px;
+}
+.two-collections .grid-container .grid-item{
+    width: 100%;
+}
+.two-collections .grid-container .grid-item img{
+    width:100% !important;
+    border-radius: 25px !important;
+    object-fit: cover !important;
+    height: 500px !important;
+}
+.two-collections .grid-container  .left-img{
+    grid-area: 1/1;
+}
+.two-collections .grid-container .left-text{
+    grid-area: 2/1;
+    padding: 20px 0px 20px 0px;
+}
+.two-collections .grid-container .right-img{
+    grid-area: 1/2;
+}
+.two-collections .grid-container .right-text{
+    grid-area: 2/2;
+    padding: 20px 0px 20px 0px;
+}
+.two-collections button{
+    padding: 16px 40px;
+    border-radius: 50px;
+}
+
+.textbox-button{
+    display: inline-block;
+}
+
+.two-collections .image-Title{
+    margin-bottom: .5em;
+    font-size: 30px;
+}
+
+
+.two-collections .image-Text{
+    color: rgb(71, 71, 71);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 2.5em;
+    /* font-weight: 400; */
+}
+
+
+
+
+
+
+      /* +++++++++    Media Queries     ++++++++++ */
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+/*---------- Two Collections Section -----------*/
+.two-collections {
+    padding: 4em 2em;
+}
+.two-collections .grid-container{
+    display: contents;
+}
+.two-collections .grid-container .collection {
+    padding-top: 30px;
+}
+
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+/*---------- Two Collections Section -----------*/
+.two-collections{
+    padding: 4em 1em;
+}
+.two-collections .grid-container .grid-item img{
+    height: 300px !important;
+    }
+.two-collections .image-Title{
+    font-size: 25px;
+}
+
+}
+
+@media (max-width: 575.98px) {
+    .two-collections{
+        padding: 3em 1em;
+    }
+
+}
+

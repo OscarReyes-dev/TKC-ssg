@@ -1,0 +1,155 @@
+
+
+/*---------- Footer Section -----------*/
+
+.footer-Container.container-fluid{
+    padding: 0px;
+    border-top: 1px solid rgb(231, 231, 231) ;
+    
+  }
+  .email-Signup{
+    padding: 5em 0em;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+  footer .form__subscribe-header{
+    width: 75%;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  footer .input-container{
+    display: flex;
+    padding: 2em 0em;
+    justify-content: center;
+  }
+  footer .input-container .input-box{
+    width: 300px;
+    padding-right: 10px;
+  }
+footer #newsletter{
+    width: 100%;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 50px;
+    padding-left: 1em;
+    height: 45px;
+  }
+  footer  .button{
+    border: none;
+    border-radius: 50px;
+    padding: 0em 1em;
+    font-weight: 600;
+  }
+  /* footer input{
+
+  } */
+  footer .social-Links-Text{
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 600 ;
+  }
+  footer .social-Links {
+    padding-top: 3em;
+    border-top: 1px solid rgb(231, 231, 231) ;
+    border-left: none;
+  }
+  footer .social-Links img{
+    width: 30px;
+  }
+  footer .social-Links ul{
+    display: flex;
+    justify-content: center;
+    padding: 0em;
+  }
+  footer .social-Links li{
+    padding: 0 20px;
+  }
+  footer .links-container{
+    border-top: 1px solid rgb(231, 231, 231) ;  
+  }
+  footer .internal-Links{
+    display: flex;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+  footer .block-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  footer .sub-Links {
+   padding: 0em;
+  }
+  footer .sub-Links li{
+  margin-bottom: 1em;
+  letter-spacing: 0em;
+  }
+  footer .links{
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  footer .end-Links-Container{
+    margin-bottom: 5em;
+  }
+  footer .end-Links{
+    justify-content: center;
+  }
+  footer .end-Link{
+    padding: 0 20px;
+  }
+
+
+
+
+
+
+      /* +++++++++    Media Queries     ++++++++++ */
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+
+/*---------- Footer Section -----------*/
+footer .quick-Links {
+    padding-bottom: 2em;
+}
+
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+/*---------- Footer Section -----------*/
+footer .links{
+    max-width: 600px;
+}
+
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+/*---------- Footer Section -----------*/
+footer .input-container .input-box{
+    width: 60%;
+}
+footer .internal-Links{
+    display: block;
+}
+footer .quick-Links-Row{
+    display: block;
+}
+footer .end-Links{
+    display: block;
+    text-align: center;
+}
+footer .social-Links li{
+    padding: 0 10px;
+}
+
+}

@@ -1,16 +1,160 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+/*---------- Global Sylings -----------*/
+
+body{
+	position: absolute;
+	overflow-x: hidden ;
+	width: 100%;
+  }
+  div{
+	font-family: "Helvetica Neue";
+  }
+  p{
+	font-size: 17px;
+	font-family: "Helvetica Neue";
+	margin-bottom: 1em;
+  }
+  h1,h2,h3,h4,h5,h6{
+	color: rgb(0, 0, 0);
+	font-family: "Helvetica Neue";
+	font-size: 35px;
+	font-weight: 700!important;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+  }
+  /* Links */
+  .text{
+	color: rgb(105, 105, 105);
+	font-family: "Helvetica Neue";
+  }
+  li a{
+	color: rgb(71, 71, 71);
+	text-decoration: none;
+	font-family: "Helvetica Neue";
+  }
+  li a:hover{
+	text-decoration: none;
+	color: rgb(255, 174, 0);
+	transition: .2s ease;
+  }
+  ul{
+	padding-left: 0px;
+  }
+  
+  
+  
+  /* Buttons */
+  
+	/* Bootstrap buttons */
+	.btn:focus,.btn:active {
+	  outline: none !important;
+	  box-shadow: none !important;
+	}
+	.textbox-button{
+	display: inline-block;
+	}
+  /* Add Product To Cart Button */
+  
+  /* View Collection Button */
+  .shop-Collection--Btn{
+	background-color: #000;
+	border:none;
+	color: white;
+	border-radius: 50px;
+  }
+  button{
+	padding: 16px 40px;
+  }
+  button:hover{
+	background-color: rgb(46, 46, 46);
+  }
+  button a{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+  }
+  button a:hover{
+	color: white;
+	/* font-size: 13px; */
+  }
+  .centered--button{
+	text-align: center;
+  }
+  .product--item-price{
+   font-size: 16px;
+   color: rgb(99, 99, 99);
+  }
+
+  /*---------- Home Page Content -----------*/
+.content-Layout.container-fluid{
+	padding-top: 78px;
+	padding-right: 0px;
+	padding-left: 0px;
+  }
+  
+
+
+
+
+
+
+
+
+      /* +++++++++    Media Queries     ++++++++++ */
+
+
+	
+	
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	
+	/*---------- Global Stylings -----------*/
+	h1,h2,h3,h4,h5,h6{
+	font-size: 30px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+
+.content-Layout.container-fluid {
+	padding-top: 57px;
 }
 
-* {
-  box-sizing: border-box;
+
+
+
+
+
+
+
 }
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+p{
+	font-size: 16px;
+}
+
+
+}
+	
+	
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	/*---------- Global Stylings -----------*/
+h1{
+	font-size: 30px;
+}
+
+ .add-To-Cart--Btn {
+
+    padding: 10px 15px;
+
+}
+
+}
+	
