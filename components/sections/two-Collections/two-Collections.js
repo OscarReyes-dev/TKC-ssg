@@ -22,7 +22,6 @@ const TwoCollections = () => (
                                 src={tcImage1}
                                 objectFit="cover"
                                 alt="Hero Image"
-                                priority={true}
                                 placeholder="blur"
                                 width={4000} 
                                 height={280} 
@@ -44,28 +43,13 @@ const TwoCollections = () => (
         </div>
         <div className={styles['collection']}>
           <div className={styles['grid-item'] + " " + styles['right-img']}>
-            {/* <Image src="assets/images/keyboard-images/collection-images/black-keyboard.jpg" className="hero" alt="" loading="lazy"/> */}
             <Image
-                                // className={styles[""]}
-                                src={tcImage2}
-                                priority={true}
-                                alt="The Keyboard Crew Logo"
-                                placeholder="blur"
-                                // className={styles['hero']}
-                                width={4000} 
-                                height={70} 
-                                // width="100%" height="100%"
-                                // style={{width: "", height: "600"}}
-
-                                // layout="fill"
-                                // objectFit="cover"
-                                // alt="Hero Image"
-                                // priority={true}
-                               
-
-
-                            />
-                           {/* <Image src={tcImage1} alt="Girl in a jacket" width="" height="600" />  */}
+                src={tcImage2}
+                alt="The Keyboard Crew Logo"
+                placeholder="blur"
+                width={4000} 
+                height={70} 
+            />
           </div>
           <div className={styles['grid-item'] + " " + styles['right-text']}>
             <h3 className={styles['image-Title']}>Always In Style</h3>

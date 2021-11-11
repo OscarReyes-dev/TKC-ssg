@@ -49,7 +49,6 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
                                       placeholder="blur"
                                   />
 
@@ -93,6 +92,15 @@ const Sixproductscollection = () => (
 
         </div>
   
+  
+
+
+
+
+
+
+
+
   
         <div className={styles['product'] + " " + styles['col']}>
             <div className={['produt-container']}>
@@ -108,7 +116,7 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
+                                      // priority={true}
                                       placeholder="blur"
                                   />
 
@@ -168,7 +176,7 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
+                                      // priority={true}
                                       placeholder="blur"
                                   />
 
@@ -228,7 +236,7 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
+                                      // priority={true}
                                       placeholder="blur"
                                   />
 
@@ -288,7 +296,7 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
+                                      // priority={true}
                                       placeholder="blur"
                                   />
 
@@ -347,7 +355,7 @@ const Sixproductscollection = () => (
                                       src={productImage}
                                       alt="Products Title for image"
                                       objectFit="cover"
-                                      priority={true}
+                                      // priority={true}
                                       placeholder="blur"
                                   />
 
