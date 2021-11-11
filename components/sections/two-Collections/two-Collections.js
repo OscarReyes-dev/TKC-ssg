@@ -2,9 +2,7 @@
 import Image from 'next/image'
 import tcImage1 from '/public/images/keyboard-images/mats-coll.jpg'
 import tcImage2 from '/public/images/keyboard-images/collection-Hero.jpg'
-import Link from 'next/link'
 import styles from '/components/sections/two-Collections/two-Collections.module.css'
-import script from 'next/script'
 
 
 
@@ -16,14 +14,12 @@ const TwoCollections = () => (
       <div className={styles['grid-container']}>
         <div className={styles['collection']}>
           <div className={styles['grid-item'] + " " + styles['left-img']}>
-            {/* <Image src="assets/images/keyboard-images/product-images/mats-coll.jpg" className="hero" alt="" loading="lazy"/> */}
 
 
                         <div style={{position:"relative", width:"100%", height: "auto"}}>
                             <Image
-                                style={{width: "100%", height: "auto"}}
+                                // style={{width: "100%", height: "auto"}}
                                 src={tcImage1}
-                                style={{width: "100", height: "auto"}}
                                 objectFit="cover"
                                 alt="Hero Image"
                                 priority={true}
@@ -76,7 +72,7 @@ const TwoCollections = () => (
             <p className={styles['image-Text']}>The Keyboard Crew has the hottest mats in the market !Th the hottest mats in tht ! The Keyboard Crew has the hottest mats in the market !Th the hottest mats in tht !</p>
             <div className={styles['textbox-button']}>
               <button aria-label="Shop Collection" className={['shop-Collection--Btn']}>
-                <a href="">Shop Now</a>
+                <a href="">Shop Now</a>  
               </button>
             </div>
           </div>

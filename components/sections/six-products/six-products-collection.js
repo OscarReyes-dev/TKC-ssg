@@ -3,7 +3,7 @@ import Image from 'next/image'
 import productImage from '/public/images/keyboard-images/keyboard-product.jpg'
 import Link from 'next/link'
 import styles from '/components/sections/six-products/six-products-collection.module.css'
-import script from 'next/script'
+
 
 
 
@@ -14,12 +14,6 @@ const Sixproductscollection = () => (
 
     // <!-- 6 Products Collection -->
     <div className={styles['products-collection']}>
-      {/* <div className={styles['Section-title-container']}>
-        <div className={styles['section-title']}>
-          <div className={styles['top-text']}>STOP BEING SO BASIC .</div>
-          <div className={styles['bottom-text']}>⌨️ Vor-Tech Keyboards is the new crack ⌨️</div>
-        </div>
-      </div> */}
   
 
 

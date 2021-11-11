@@ -1,15 +1,5 @@
 
-import Image from 'next/image'
-// import tcImage1 from '/public/images/keyboard-images/mats-coll.jpg'
-// import tcImage2 from '/public/images/keyboard-images/collection-Hero.jpg'
-import Link from 'next/link'
 import styles from '/components/global/footer/footer.module.css'
-import script from 'next/script'
-
-
-
-
-
 
 const Footer = () => (
 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import siteLogo from '/public/images/logo/TKC-1logo.png'
 import Link from 'next/link'
 import styles from '/components/global/navigation/nav.module.css'
-import script from 'next/script'
+
 
 
 

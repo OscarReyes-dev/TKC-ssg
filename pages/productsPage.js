@@ -1,5 +1,5 @@
 import Nav from '/components/global/navigation/nav';
-// import styles from '/components/headers/header.module.css'
+
 const Index = () => (
     <div>
 
