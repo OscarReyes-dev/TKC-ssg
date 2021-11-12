@@ -30,7 +30,7 @@ const Nav = () => (
             </button>
           </li>
           <li className={styles['user-account']}>
-            <button className={styles["account-Icon--Mobile"] + " " + styles["icon"]}>
+            <button className={styles["account-Icon--Mobile"] + " " + styles["icon-Style"] + " " + styles["icon"]}>
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
                 className={["bi"] + " " + ["bi-person"]} viewBox="0 0 16 16">
                 <path
@@ -63,7 +63,7 @@ const Nav = () => (
         <div className={styles["icons"]}>
           <ul className={styles["icons-list"]}>
             <li className={styles["search"]}>
-              <button className={styles["search-Button"] + " " + styles["icon"]} aria-label="Search Store Inventory"
+              <button className={styles["search-Button"] + " " + styles["icon-Style"] + " " + styles["icon"]} aria-label="Search Store Inventory"
                 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
                   className="bi bi-search" viewBox="0 0 16 16">
@@ -73,7 +73,7 @@ const Nav = () => (
               </button>
             </li>
             <li className={styles["user-account"]}>
-              <button className={styles["account-Icon"] + " " + styles["icon"]}>
+              <button className={styles["account-Icon"] + " " + styles["icon"] + " " + styles["icon-Style"]}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
                   className="bi bi-person" viewBox="0 0 16 16">
                   <path
@@ -82,8 +82,11 @@ const Nav = () => (
               </button>
             </li>
             <li className={styles["shopping-Bag"]}>
-              <a className={"btn" + " " + styles["cartAndItems"] + " " + styles["icon"]} data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                aria-controls="offcanvasExample">
+
+
+
+              <button className={"btn" + " " + styles["cartAndItems"] + " " + styles["icon-Style"] + " " + styles["icon"]} data-bs-toggle="offcanvas" type="button"
+                aria-controls="offcanvasExample" data-bs-target="#offcanvasExample">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className={["bi"] + " " + ["bi-bag"]}
                   viewBox="0 0 16 16">
                   <path
@@ -92,7 +95,11 @@ const Nav = () => (
                 <div className={styles["numberofItems"]}>
                   13
                 </div>
-              </a>
+              </button>
+
+
+         
+
             </li>
           </ul>
         </div>

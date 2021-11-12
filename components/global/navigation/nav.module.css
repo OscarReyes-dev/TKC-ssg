@@ -40,13 +40,13 @@
   }
   header .top-row .item-1 .icons-list .account-Icon--Mobile {
   display : none;
-  padding : 4px 10px;
+  /* padding : 4px 10px; */
   background-color : transparent;
   border : none;
   }
-  header .top-row .item-1 .icons-list li .icon:hover {
+  /* header .top-row .item-1 .icons-list li .icon:hover {
   color : rgb(255, 174, 0);
-  }
+  } */
   header .top-row .item-2 {
   text-align : center;
   padding : 5px;
@@ -97,24 +97,32 @@
   }
   header .top-row .item-3 .icons .icons-list li button {
   border : none;
-  padding : 0;
+  /* padding : 0; */
   }
   header .top-row .item-3 .icons .icons-list li .icon {
-  color : rgb(0, 0, 0);
+  /* color : rgb(0, 0, 0); */
   background-color : transparent;
   font-size : 20px;
   }
-  header .top-row .item-3 .icons .icons-list li .icon:hover {
-  color : rgb(255, 174, 0);
+  .icon-Style{
+    padding: 4px 10px;
+    color: rgb(0, 0, 0);
   }
+  .icon-Style:hover{
+    padding: 4px 10px;
+    color : rgb(122, 122, 122);
+  }
+  /* header .top-row .item-3 .icons .icons-list li .icon:hover {
+  color : rgb(255, 174, 0);
+  } */
   header .top-row .item-3 .icons .icons-list .cartAndItems {
   display : flex;
   border : none;
   }
   header .top-row .item-3 .icons .icons-list .shopping-Bag .numberofItems {
   position : absolute;
-  top : 17px;
-  right : 32px;
+  top: 10px;
+  right: 22px;
   color : white;
   background-color : black;
   width : 22px;
@@ -818,6 +826,7 @@ header .top-row .item-1 .icons-list .account-Icon--Mobile {
 display : flex;
 background-color : transparent;
 border : none;
+/* color: black; */
 }
 header .top-row .item-3 .user-account {
 display : none;
