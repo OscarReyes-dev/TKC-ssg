@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import siteLogo from '/public/images/logo/TKC-1logo.png'
+import cartProductImage from '/public/images/keyboard-images/keyboard-product.jpg'
 import Link from 'next/link'
 import styles from '/components/global/navigation/nav.module.css'
 
@@ -11,6 +12,8 @@ import styles from '/components/global/navigation/nav.module.css'
 
 
 const Nav = () => (
+<div>
+
 
 <header id={styles['header']}>
 
@@ -352,5 +355,549 @@ const Nav = () => (
 
 </header>
 
+
+
+
+
+<div className={styles['cart-drawer']}> 
+  <div className={styles['offcanvas-Cart'] + " " + ['offcanvas'] + " " + ['offcanvas-end']} tabIndex="-1" id={["offcanvasExample"]} aria-labelledby="offcanvasExampleLabel">
+
+    <header className={['row'] + " " + ['offcanvas-header']}>
+        <div className={styles['cart-Header'] + " " + styles['offcanvas-title'] + " " + ['col-10']}>
+            Shopping Bag <span className={styles['cart-Items']}>13 Items</span>
+        </div>
+    
+        <button className={['col-2'] + " " + styles['close-Drawer'] + " " + styles['hamburger--spring'] + " " + styles['is-active']} type="button" data-bs-dismiss="offcanvas"
+          aria-label="Close">
+          <span className={styles['hamburger-box']}>
+            <span className={styles['hamburger-inner']}></span>
+          </span>
+        </button>
+    </header>
+
+
+
+    <div className={['offcanvas-body'] + " " + styles['offcanvas-Body']}>
+      <div className={['container']}>
+        
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  placeholder="blur"
+               />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              {/* <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" className="cart-Product--Image" alt="" loading="lazy" style="object-fit: cover;"> */}
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  // priority={true}
+                                  placeholder="blur"
+                              />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              {/* <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" className="cart-Product--Image" alt="" loading="lazy" style="object-fit: cover;"> */}
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  // priority={true}
+                                  placeholder="blur"
+                              />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              {/* <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" className="cart-Product--Image" alt="" loading="lazy" style="object-fit: cover;"> */}
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  // priority={true}
+                                  placeholder="blur"
+                              />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              {/* <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" className="cart-Product--Image" alt="" loading="lazy" style="object-fit: cover;"> */}
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  // priority={true}
+                                  placeholder="blur"
+                              />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <div className={styles['cart-Product'] + " " + ['row']}>
+          <div className={['col-4']}>
+            <div className={styles['cart-Product--Image']}>
+              {/* <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" className="cart-Product--Image" alt="" loading="lazy" style="object-fit: cover;"> */}
+              <Image
+                                  className={styles["cart-Product--Image"]}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  // priority={true}
+                                  placeholder="blur"
+                              />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div className={styles['cart-Product--Info'] + " " + ['col-8']}>
+
+            <div className={['row']}>
+              <div className={styles['cart-Product--Collection'] + " " + ['col']}>
+                Vor-Tech
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Title'] + " " + ['col']}>
+                Lava 2WR
+              </div>
+            </div>
+            <div className={styles['product-Pricing']}>
+            <div className={['row']}>
+              <div className={styles['product-Pricing--Unit'] + " " + ['col-6']}>
+                $50.00
+              </div>
+              <div className={['col-6']}>
+              
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div className={['row']}>
+              <div className={styles['cart-Product--Quantity'] + " " + ['col']}>
+                Quantity: 3
+              </div>
+            
+            </div>
+            <div className={['row']}>
+              
+              <div className={styles['cart-Product--Price'] + " " + ['col']}>
+                + $75.00
+              </div>
+            </div>
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer className={styles['cart-Footer']}>
+      
+      <div className={styles['cart-Quantity'] + " " + ['row']}>
+        
+      </div>
+      <div className={styles['cart-Subtotal'] + " " + ['row']}>
+        <div className={styles['cart-Subtotal--Text'] + " " + ['col']}>
+        
+            SUBTOTAL:
+          
+        </div>
+        <div className={styles['cart-Subtotal--Amount'] + " " + ['col']}>
+          $300.00
+        </div>
+      </div>
+      
+      <div className={styles['checkout-Button']}>
+        
+        <div className={styles['checkout-Btn']}>
+          <div className={['centered--button']}>
+            <div className={['textbox-button']}>
+              <button aria-label="Checkout" className={styles['add-To-Cart--Btn']}>
+                <a>Checkout</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
 )
+
 export default Nav
