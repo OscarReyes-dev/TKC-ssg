@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import siteLogo from '/public/images/logo/TKC-1logo.png'
 import cartProductImage from '/public/images/keyboard-images/keyboard-product.jpg'
@@ -14,6 +13,8 @@ import styles from '/components/global/navigation/nav.module.css'
 const Nav = () => (
 <div>
 
+
+{/* Header */}
 
 <header id={styles['header']}>
 
@@ -51,7 +52,7 @@ const Nav = () => (
                   <Image
                   className={styles["popup-Logo"]}
                   src={siteLogo}
-                  priority={true}
+                  // priority={true}
                   alt="The Keyboard Crew Logo"
                   width={75} 
                   height={28} 
@@ -358,13 +359,13 @@ const Nav = () => (
 
 
 
-
+{/* Side Cart */}
 <div className={styles['cart-drawer']}> 
   <div className={styles['offcanvas-Cart'] + " " + ['offcanvas'] + " " + ['offcanvas-end']} tabIndex="-1" id={["offcanvasExample"]} aria-labelledby="offcanvasExampleLabel">
 
     <header className={['row'] + " " + ['offcanvas-header']}>
-        <div className={styles['cart-Header'] + " " + styles['offcanvas-title'] + " " + ['col-10']}>
-            Shopping Bag <span className={styles['cart-Items']}>13 Items</span>
+        <div className={['cart-Header'] + " " + styles['offcanvas-title'] + " " + ['col-10']}>
+            Shopping  Bag <span className={styles['cart-Items']}>13 Items</span>
         </div>
     
         <button className={['col-2'] + " " + styles['close-Drawer'] + " " + styles['hamburger--spring'] + " " + styles['is-active']} type="button" data-bs-dismiss="offcanvas"
@@ -881,10 +882,98 @@ const Nav = () => (
 
 
 
+{/* Search  */}
 
 
 
 
+{/* Mobile Menu */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+
+<div className={styles['center-Popup'] + " " + styles['popup-Hidden']}>
+  <div className={['container-fluid '] + " " + styles['popup-Square']}>
+    <div className={styles['row']}>
+      <div className={styles['main-Column']}>
+
+            <div className={['row'] + " " + styles['top-Row']}>
+
+              <div className={['col-3']}> </div>
+
+              <div className={['col-6'] + " " + styles['logo']}>
+
+                  <Image
+                  className={styles["popup-Logo"]}
+                  src={siteLogo}
+                  alt="The Keyboard Crew Logo"
+                  width={75} 
+                  height={28} 
+                  placeholder="blur" 
+                  />
+
+
+
+              </div>
+              <div className={['col-3']}>
+              <button className={['hamburger'] + " " + ['hamburger--spring is-active']} id={["close-Login--Popup"]} type="button">
+                <span className={styles['hamburger-box']}>
+                  <span className={styles['hamburger-inner']}></span>
+                </span>
+              </button>
+            </div>
+            </div>
+    
+            <div className={['row'] + " " + styles['login-Form--Row']}>
+              <form className={['form']}>
+                <div className={['mb-3']}>
+                  <label htmlFor="exampleInputEmail1" className={['form-label']}>Email address</label>
+                  <input type="email" className={['form-control']} id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                </div>
+                <div className={['mb-3']}>
+                  <label htmlFor="exampleInputPassword1" className={['form-label']}>Password</label>
+                  <input type="password" className={['form-control']} id="exampleInputPassword1"/>
+                </div>
+
+                <button type="submit" className={['btn'] + " " + styles['btn-primary']}>SIGN IN</button>
+              </form>
+            </div>
+      
+            <div className={['row'] + " " + styles['forgot-Password--Row']}>
+              <div className={['col-12']}>
+                  <div className={styles['reset-Password--Link']}><a href="">Forgot Password</a></div>
+              </div>
+            </div>
+
+            <div className={['row'] + " " + styles['new-Member--Row']}>
+              <div className={['col']}>
+                  <div className={styles['footer-Text']}>Not a member?</div>
+              </div>
+              <div className={['col']}>
+                <div className={styles['create-Account']}><a href="">Join For Free</a></div>
+            </div>
+            </div>
+
+      </div>
+  </div>
+  </div>
+</div>
+
+
+ */}
 
 
 

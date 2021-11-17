@@ -22,12 +22,11 @@ const Footer = () => (
               <div className={styles['input-container']}>
                 <div className={styles['input-box']}>
                 {/* <form action="" method=""> */}
-                    {/* <label for="name">Name</label> */}
+                    
                     <input type="email" name="email-signup" id={styles['newsletter']} placeholder="Email Address" />
-                    {/* <button type="submit">Register</button> */}
+                     
                 {/* </form> */}
 
-                  {/* <input type="email" name="email-signup" id="newsletter" placeholder="Email Address"> */}
                 </div>
                 <button type="submit" title="Sign Up" className={styles['button'] +" "+ ['shop-Collection--Btn']}
                   aria-label="Click to Sign Up">Sign Up</button>

@@ -21,11 +21,11 @@ const Hero = () => (
          <div className={styles['img']} >
                 <Image
                   src={heroImage}
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Hero Image"
-                    priority={true}
-                    placeholder="blur"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="Hero Image"
+                  // priority={true}
+                  placeholder="blur"
                 />
           </div>
          </div>

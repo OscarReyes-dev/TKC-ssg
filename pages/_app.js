@@ -1,6 +1,3 @@
-
-
-
 import '../styles/reset.css'
 import Head from "next/head";
 

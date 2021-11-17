@@ -816,6 +816,148 @@
 
 
 
+
+
+/*---------- Center PopUp -----------*/
+
+
+.popup-Hidden{
+  /* display: none; */
+  }
+  .center-Popup{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    top: 50%;
+    z-index: 9999999;
+    left: 50%;
+    background-color: rgb(250, 250, 250);
+  }
+  .center-Popup .row > * {
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+  }
+  .center-Popup .btn-primary {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px  solid black;
+  }
+  .center-Popup .btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .center-Popup .popup-Square{
+    width: 450px;
+    min-height: 550px;
+  }
+  .center-Popup .popup-Square .main-Column{
+    height: 100%;
+  }
+  .center-Popup .popup-Square .row{
+    height: 100%;
+    justify-content: center;
+  }
+  
+      /* Center Popup Top Row Logo */
+  .center-Popup .popup-Square .top-Row{
+    padding: .5em 0em 4em;
+  }
+  .center-Popup .popup-Square .row .main-Column .logo{
+    text-align: center;
+    padding: 1em;
+  }
+  .center-Popup .logo .popup-Logo{
+    width: 80px;
+  }
+      /* Center Popup Top Row Close Button */
+  
+  .center-Popup .hamburger{
+    float: right;
+    padding-top: 1em;
+  }
+  .center-Popup .hamburger--spring .hamburger-inner::before {
+    background-color: #000000;
+  }
+  .center-Popup .hamburger--spring .hamburger-inner::after {
+    background-color: #000000;
+  }
+  
+  .center-Popup .popup-Square .form-control {
+    line-height: 2;
+    color:rgb(71, 71, 71);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 25px;
+  }
+  
+  /* .center-Popup .popup-Square .form-control input:focus{
+    
+  } */
+  .center-Popup .popup-Square .login-Form--Row{
+    padding-bottom: 1.5em;
+  }
+  .center-Popup .popup-Square .login-Form--Row .form{
+    width: 90%;
+  }
+  .center-Popup .popup-Square .forgot-Password--Row{
+    padding-bottom: 2.5em;
+    margin-left: 1em;
+  }
+  .center-Popup .popup-Square .forgot-Password--Row .reset-Password--Link a{
+    color: rgb(22, 22, 22);
+  }
+  .center-Popup .popup-Square .forgot-Password--Row .reset-Password--Link a:hover{
+  color: rgb(255, 153, 0);
+  }
+  .center-Popup .popup-Square .new-Member--Row .footer-Text{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+  }
+  .center-Popup .popup-Square .new-Member--Row .footer-Text{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .center-Popup .popup-Square .new-Member--Row .create-Account{
+    text-align: center;
+  }
+  .center-Popup .popup-Square .new-Member--Row .create-Account a{
+    font-size: 15px;
+    color: black;
+  }
+  .center-Popup .popup-Square .new-Member--Row .create-Account a:hover{
+    color:  rgb(255, 153, 0);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1210.98px) {
 header .top-row .grid-container .item-2 {
   font-size : 35px;
