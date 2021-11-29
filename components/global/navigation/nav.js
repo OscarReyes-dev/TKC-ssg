@@ -11,7 +11,7 @@ import styles from '/components/global/navigation/nav.module.css'
 
 
 const Nav = () => (
-<div>
+<div> 
 
 
 {/* Header */}
@@ -355,8 +355,6 @@ const Nav = () => (
 
 
 </header>
-
-
 
 
 {/* Side Cart */}
@@ -879,43 +877,16 @@ const Nav = () => (
 </div>
 
 
-
-
-
-{/* Search  */}
-
-
-
-
-{/* Mobile Menu */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{/* Center Pop Up for mobile sign up and sign in */}
 
 {/* 
-
 <div className={styles['center-Popup'] + " " + styles['popup-Hidden']}>
   <div className={['container-fluid '] + " " + styles['popup-Square']}>
-    <div className={styles['row']}>
+    <div className={['row']}>
       <div className={styles['main-Column']}>
-
             <div className={['row'] + " " + styles['top-Row']}>
-
               <div className={['col-3']}> </div>
-
               <div className={['col-6'] + " " + styles['logo']}>
-
                   <Image
                   className={styles["popup-Logo"]}
                   src={siteLogo}
@@ -924,34 +895,31 @@ const Nav = () => (
                   height={28} 
                   placeholder="blur" 
                   />
-
-
-
               </div>
               <div className={['col-3']}>
-              <button className={['hamburger'] + " " + ['hamburger--spring is-active']} id={["close-Login--Popup"]} type="button">
+              <button className={styles['hamburger'] + " " + styles['hamburger--spring'] + " " + styles['is-active']} id={styles["close-Login--Popup"]} type="button">
                 <span className={styles['hamburger-box']}>
                   <span className={styles['hamburger-inner']}></span>
                 </span>
               </button>
             </div>
             </div>
-    
-            <div className={['row'] + " " + styles['login-Form--Row']}>
-              <form className={['form']}>
+  
+            <div className={['row'] + " " + styles['login-Form--Row'] + " " + styles['row-Style']}>
+              <form className={styles['form']}>
                 <div className={['mb-3']}>
                   <label htmlFor="exampleInputEmail1" className={['form-label']}>Email address</label>
-                  <input type="email" className={['form-control']} id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                  <input type="email" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputEmail1']} aria-describedby="emailHelp"/>
                 </div>
                 <div className={['mb-3']}>
-                  <label htmlFor="exampleInputPassword1" className={['form-label']}>Password</label>
-                  <input type="password" className={['form-control']} id="exampleInputPassword1"/>
+                  <label htmlFor="exampleInputPassword1" className={['form-label']} >Password</label>
+                  <input type="password" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputPassword1']}/>
                 </div>
 
                 <button type="submit" className={['btn'] + " " + styles['btn-primary']}>SIGN IN</button>
               </form>
             </div>
-      
+
             <div className={['row'] + " " + styles['forgot-Password--Row']}>
               <div className={['col-12']}>
                   <div className={styles['reset-Password--Link']}><a href="">Forgot Password</a></div>
@@ -966,14 +934,402 @@ const Nav = () => (
                 <div className={styles['create-Account']}><a href="">Join For Free</a></div>
             </div>
             </div>
+      </div>
+    </div>
+  </div>
+</div> */}
+
+
+{/* Page Overlay */}
+{/* <div className={styles['overlayClosed'] + " " + styles['overlayNowOpened']} className={styles['overlayNowOpened']}></div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* Search Results Pop Up  */}
+
+
+<div className={styles['search-Results']}>
+
+
+  <div className={styles['offcanvas-1'] + " " + ['offcanvas'] + " " + ['offcanvas-top']} tabIndex="-1" id={['offcanvasTop']} aria-labelledby="offcanvasTopLabel">
+    <div className={styles['search-Results-Overlay']}>
+      <div className={['search-Results-Container'] + " " + ['container-fluid']}>
+
+        <div className={styles['top-row'] + " " + styles['row']}>
+          <header>
+            <div className={styles['top-row']}>
+              <div className={styles['grid-container']}>
+                <div className={styles['grid-item'] + " " + styles['item-1']}>
+                </div>
+
+
+
+                <div className={styles['grid-item'] + " " + styles['item-2']}>
+                  <div className={styles['desktop-logo']}>
+                    <a href="E-Commerce-Home-Page.html">
+
+
+                      <Image
+                        className={styles["popup-Logo"]}
+                        src={siteLogo}
+                        // priority={true}
+                        alt="The Keyboard Crew Logo"
+                        width={75} 
+                        height={28} 
+                        placeholder="blur" 
+                      />
+                    </a>
+                  </div>
+                </div>
+
+
+
+
+                <div className={styles['grid-item'] + " " + styles['item-3']}>
+                  <div className={styles['close-Search-Btn']}>
+                    <button className={styles['close-Search-Canvas--btn'] + " " + styles['hamburger--spring'] + " " + styles['is-active']} id={styles['close-Search']} type="button"
+                      data-bs-dismiss="offcanvas" aria-label="Close">
+                      <span className={styles['hamburger-box']}>
+                        <span className={styles['hamburger-inner']}></span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </header>
+        </div>
+
+
+
+
+
+   
+
+        <div className={styles['input-Row'] + " " + ['row']}>
+          <div className={['col-12']}>
+
+            <form action="">
+              <div className={styles['input-box']}>
+                <input type="search" name="Search Store" id={styles['search-Results-Input']} placeholder="Search Store..."/>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div className={styles['popular-Search--Links'] + " " + ['row'] + " " + ['justify-content-md-center']}>
+          <div className={styles['popular-Searches'] + " " + ['col-12']}>
+            
+            <div className={styles['popular-Searches--Text']}>
+              <label htmlFor="Popular Searches">
+                Popular Searches:
+              </label>
+            </div>
+              <ul className={styles['popular-Links']}>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mechanical Keyboards</a></li>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Keyboards</a></li>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+              </ul>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+          <div className={styles['search-Query--Results'] + " " + ['container-fluid']} >
+    {/* Container */}
+            <div className={styles['product-Suggestions'] + " " + ['container']}>
+
+  {/* Row */}
+              <div className={styles['product-Suggestions--Row'] + " " + ['row'] + " " + ['justify-content-md-center']}>
+                <div className={['col-10']}>
+                  
+                  <div className={['row'] + " " + ['justify-content-md-center']}>
+                    <div className={styles['product-Suggestions--Title'] + " " + ['col']}>Product Suggestion</div>
+                  </div>
+
+                  <div className={['row '] + " " + ['row-cols-2'] + " " + ['row-cols-sm-2'] + " " + ['row-cols-md-4']}>
+
+
+
+
+
+
+
+{/* COL */}
+                    <div className={styles['product'] + " " + ['col']}>
+                      <div className={styles['produt-container']}>
+  {/* a */}
+                        <a href="" className={styles['product-block']}>
+                          <div className={styles['grid-item']}>
+                            <div className={styles['product-img']}>
+                            
+                              <Image
+                                  className={styles['search-Query--Image']}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  placeholder="blur"
+                              />
+                                    
+                            
+                            </div>
+
+                            <div className={styles['item--description']}>
+                              <div className={styles['collection--title']}>Vor-Tech</div>
+                              <div className={styles['product--item-title']}>
+                                <div className={styles['prod--title']}>Lava 2WR</div>
+                              </div>
+                              <div className={styles['product--item-price']}>$280.00</div>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+                    <div className={styles['product'] + " " + ['col']}>
+                      <div className={styles['produt-container']}>
+                        <a href="" className={styles['product-block']}>
+                          <div className={styles['grid-item']}>
+                            <div className={styles['product-img']}>
+
+                              <Image
+                                  className={styles['search-Query--Image']}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  placeholder="blur"
+                              />
+                           
+                            </div>
+
+                            <div className={styles['item--description']}>
+                              <div className={styles['collection--title']}>Vor-Tech</div>
+                              <div className={styles['product--item-title']}>
+                                <div className={styles['prod--title']}>Lava 2WR</div>
+                              </div>
+                              <div className={styles['product--item-price']}>$280.00</div>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div className={styles['product'] + " " + ['col']}>
+                      <div className={styles['produt-container']}>
+                        <a href="" className={styles['product-block']}>
+                          <div className={styles['grid-item']}>
+                            <div className={styles['product-img']}>
+
+
+                              <Image
+                                  className={styles['search-Query--Image']}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  placeholder="blur"
+                              />
+                            
+                            
+                            </div>
+
+                            <div className={styles['item--description']}>
+                              <div className={styles['collection--title']}>Vor-Tech</div>
+                              <div className={styles['product--item-title']}>
+                                <div className={styles['prod--title']}>Lava 2WR</div>
+                              </div>
+                              <div className={styles['product--item-price']}>$280.00</div>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div className={styles['product'] + " " + ['col']}>
+                      <div className={styles['produt-container']}>
+                        <a href="" className={styles['product-block']}>
+                          <div className={styles['grid-item']}>
+                            <div className={styles['product-img']}>
+                              
+
+                              <Image
+                                  className={styles['search-Query--Image']}
+                                  src={cartProductImage}
+                                  alt="Products Title for image"
+                                  objectFit="cover"
+                                  placeholder="blur"
+                              />
+                            
+                            
+                            </div>
+
+                            <div className={styles['item--description']}>
+                              <div className={styles['collection--title']}>Vor-Tech</div>
+                              <div className={styles['product--item-title']}>
+                                <div className={styles['prod--title']}>Lava 2WR</div>
+                              </div>
+                              <div className={styles['product--item-price']}>$280.00</div>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div> 
+            
+            <div className={styles['product-Suggestions'] + " " + ['container']}>
+              <div className={styles['product-Suggestions--Row'] + " " + ['row'] + " " + ['justify-content-md-center']}>
+                <div className={['col-10']}>
+                  
+                  <div className={['row'] + " " + ['justify-content-md-center']}>
+                    <div className={styles['product-Suggestions--Title'] + " " + ['col']}>Collections</div>
+                  </div>
+
+                  <div className={['row']}>
+                    <ul className={styles['Search-Results--Links']}>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mechanical Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+            
+            <div className={styles['product-Suggestions'] + " " + ['container']}>
+              <div className={styles['product-Suggestions--Row'] + " " + ['row'] + " " + ['justify-content-md-center']}>
+                <div className={['col-10']}>
+                  
+                  <div className={['row'] + " " + ['justify-content-md-center']}>
+                    <div className={styles['product-Suggestions--Title'] + " " + ['col']}>Collections</div>
+                  </div>
+
+                  <div className={['row']}>
+                    <ul className={styles['Search-Results--Links']}>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mechanical Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+
+
+
+
+            <div className={styles['product-Suggestions'] + " " + ['container']}>
+              <div className={styles['product-Suggestions--Row'] + " " + ['row'] + " " + ['justify-content-md-center']}>
+                <div className={['col-10']}>
+                  
+                  <div className={['row'] + " " + ['justify-content-md-center']}>
+                    <div className={styles['product-Suggestions--Title'] + " " + ['col']}>Collections</div>
+                  </div>
+
+                  <div className={['row']}>
+                    <ul className={styles['Search-Results--Links']}>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mechanical Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Keyboards</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Mouses</a></li>
+                      <li className={styles['popular-Link']}><a className={styles['popular-Anchor--Links']} href="">Vor-Tech</a></li>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+     
+     
+        </div> 
+
+
+
+
+
 
       </div>
-  </div>
+    </div>
   </div>
 </div>
 
 
- */}
+
+
+
+
+
+
+{/* Mobile Menu */}
+
 
 
 
