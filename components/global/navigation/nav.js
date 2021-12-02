@@ -10,6 +10,15 @@ import styles from '/components/global/navigation/nav.module.css'
 
 
 
+
+
+
+
+
+
+
+
+
 const Nav = () => (
 <div> 
 
@@ -34,7 +43,7 @@ const Nav = () => (
             </button>
           </li>
           <li className={styles['user-account']}>
-            <button className={styles["account-Icon--Mobile"] + " " + styles["icon-Style"] + " " + styles["icon"]}>
+            <button className={styles["account-Icon--Mobile"] + " " + styles["icon-Style"] + " " + styles["icon"] + " " + ["btn"]} type="button" data-bs-toggle="offcanvas" data-bs-target="#accountLogin" aria-controls="accountLogin">
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
                 className={["bi"] + " " + ["bi-person"]} viewBox="0 0 16 16">
                 <path
@@ -77,7 +86,7 @@ const Nav = () => (
               </button>
             </li>
             <li className={styles["user-account"]}>
-              <button className={styles["account-Icon"] + " " + styles["icon"] + " " + styles["icon-Style"]}>
+              <button className={styles["account-Icon"] + " " + styles["icon"] + " " + styles["icon-Style"] + " " + ["btn"]} type="button" data-bs-toggle="offcanvas" data-bs-target="#accountLogin" aria-controls="accountLogin">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
                   className="bi bi-person" viewBox="0 0 16 16">
                   <path
@@ -877,100 +886,13 @@ const Nav = () => (
 </div>
 
 
-{/* Center Pop Up for mobile sign up and sign in */}
-
-{/* 
-<div className={styles['center-Popup'] + " " + styles['popup-Hidden']}>
-  <div className={['container-fluid '] + " " + styles['popup-Square']}>
-    <div className={['row']}>
-      <div className={styles['main-Column']}>
-            <div className={['row'] + " " + styles['top-Row']}>
-              <div className={['col-3']}> </div>
-              <div className={['col-6'] + " " + styles['logo']}>
-                  <Image
-                  className={styles["popup-Logo"]}
-                  src={siteLogo}
-                  alt="The Keyboard Crew Logo"
-                  width={75} 
-                  height={28} 
-                  placeholder="blur" 
-                  />
-              </div>
-              <div className={['col-3']}>
-              <button className={styles['hamburger'] + " " + styles['hamburger--spring'] + " " + styles['is-active']} id={styles["close-Login--Popup"]} type="button">
-                <span className={styles['hamburger-box']}>
-                  <span className={styles['hamburger-inner']}></span>
-                </span>
-              </button>
-            </div>
-            </div>
-  
-            <div className={['row'] + " " + styles['login-Form--Row'] + " " + styles['row-Style']}>
-              <form className={styles['form']}>
-                <div className={['mb-3']}>
-                  <label htmlFor="exampleInputEmail1" className={['form-label']}>Email address</label>
-                  <input type="email" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputEmail1']} aria-describedby="emailHelp"/>
-                </div>
-                <div className={['mb-3']}>
-                  <label htmlFor="exampleInputPassword1" className={['form-label']} >Password</label>
-                  <input type="password" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputPassword1']}/>
-                </div>
-
-                <button type="submit" className={['btn'] + " " + styles['btn-primary']}>SIGN IN</button>
-              </form>
-            </div>
-
-            <div className={['row'] + " " + styles['forgot-Password--Row']}>
-              <div className={['col-12']}>
-                  <div className={styles['reset-Password--Link']}><a href="">Forgot Password</a></div>
-              </div>
-            </div>
-
-            <div className={['row'] + " " + styles['new-Member--Row']}>
-              <div className={['col']}>
-                  <div className={styles['footer-Text']}>Not a member?</div>
-              </div>
-              <div className={['col']}>
-                <div className={styles['create-Account']}><a href="">Join For Free</a></div>
-            </div>
-            </div>
-      </div>
-    </div>
-  </div>
-</div> */}
-
-
-{/* Page Overlay */}
-{/* <div className={styles['overlayClosed'] + " " + styles['overlayNowOpened']} className={styles['overlayNowOpened']}></div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {/* Search Results Pop Up  */}
-
-
 <div className={styles['search-Results']}>
 
 
   <div className={styles['offcanvas-1'] + " " + ['offcanvas'] + " " + ['offcanvas-top']} tabIndex="-1" id={['offcanvasTop']} aria-labelledby="offcanvasTopLabel">
     <div className={styles['search-Results-Overlay']}>
-      <div className={['search-Results-Container'] + " " + ['container-fluid']}>
+      <div className={styles['search-Results-Container'] + " " + ['container-fluid']}>
 
         <div className={styles['top-row'] + " " + styles['row']}>
           <header>
@@ -1074,7 +996,7 @@ const Nav = () => (
 
   {/* Row */}
               <div className={styles['product-Suggestions--Row'] + " " + ['row'] + " " + ['justify-content-md-center']}>
-                <div className={['col-10']}>
+                <div className={styles['product-Suggestions-Col'] + " " + ['col-10']}>
                   
                   <div className={['row'] + " " + ['justify-content-md-center']}>
                     <div className={styles['product-Suggestions--Title'] + " " + ['col']}>Product Suggestion</div>
@@ -1112,7 +1034,7 @@ const Nav = () => (
                               <div className={styles['product--item-title']}>
                                 <div className={styles['prod--title']}>Lava 2WR</div>
                               </div>
-                              <div className={styles['product--item-price']}>$280.00</div>
+                              <div className={['product--item-price']}>$280.00</div>
                             </div>
 
                           </div>
@@ -1144,7 +1066,7 @@ const Nav = () => (
                               <div className={styles['product--item-title']}>
                                 <div className={styles['prod--title']}>Lava 2WR</div>
                               </div>
-                              <div className={styles['product--item-price']}>$280.00</div>
+                              <div className={['product--item-price']}>$280.00</div>
                             </div>
 
                           </div>
@@ -1179,7 +1101,7 @@ const Nav = () => (
                               <div className={styles['product--item-title']}>
                                 <div className={styles['prod--title']}>Lava 2WR</div>
                               </div>
-                              <div className={styles['product--item-price']}>$280.00</div>
+                              <div className={['product--item-price']}>$280.00</div>
                             </div>
 
                           </div>
@@ -1214,7 +1136,7 @@ const Nav = () => (
                               <div className={styles['product--item-title']}>
                                 <div className={styles['prod--title']}>Lava 2WR</div>
                               </div>
-                              <div className={styles['product--item-price']}>$280.00</div>
+                              <div className={['product--item-price']}>$280.00</div>
                             </div>
 
                           </div>
@@ -1328,7 +1250,178 @@ const Nav = () => (
 
 
 
-{/* Mobile Menu */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* THis button will be the account icon */}
+{/* <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#accountLogin" aria-controls="accountLogin">
+  Button with data-bs-target
+</button> */}
+
+
+
+
+
+
+{/* <div >
+
+</div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* Page Overlay */}
+{/* <div className={styles['overlayClosed'] + " " + styles['overlayNowOpened']} className={styles['overlayNowOpened']}></div> */}
+
+
+
+{/* Center Pop Up for mobile sign up and sign in */}
+
+
+<div className={styles['center-Popup'] + " " + ['offcanvas'] + " " + ['']}  id="accountLogin" aria-labelledby="accountLoginPopup">
+  <div className={['container-fluid '] + " " + styles['popup-Square']}>
+    <div className={['row']}>
+      <div className={styles['main-Column']}>
+            <div className={['row'] + " " + styles['top-Row']}>
+              <div className={['col-3']}> </div>
+              <div className={['col-6'] + " " + styles['logo']}>
+                  <Image
+                  className={styles["popup-Logo"]}
+                  src={siteLogo}
+                  alt="The Keyboard Crew Logo"
+                  width={75} 
+                  height={28} 
+                  placeholder="blur" 
+                  />
+              </div>
+              <div className={['col-3']}>
+              <button className={styles['hamburger'] + " " + styles['hamburger--spring'] + " " + styles['is-active'] + " " + ["btn"]} type="button" data-bs-toggle="offcanvas" data-bs-target="#accountLogin" aria-controls="accountLogin" >
+                <span className={styles['hamburger-box']}>
+                  <span className={styles['hamburger-inner']}></span>
+                </span>
+              </button>
+            </div>
+            </div>
+  
+            <div className={['row'] + " " + styles['login-Form--Row'] + " " + styles['row-Style']}>
+              <form className={styles['form']}>
+                <div className={['mb-3']}>
+                  <label htmlFor="exampleInputEmail1" className={['form-label']}>Email address</label>
+                  <input type="email" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputEmail1']} aria-describedby="emailHelp"/>
+                </div>
+                <div className={['mb-3']}>
+                  <label htmlFor="exampleInputPassword1" className={['form-label']} >Password</label>
+                  <input type="password" className={['form-control'] + " " + styles['form-control--Style']} id={styles['exampleInputPassword1']}/>
+                </div>
+
+                <button type="submit" className={['btn'] + " " + styles['btn-primary']}>SIGN IN</button>
+              </form>
+            </div>
+
+            <div className={['row'] + " " + styles['forgot-Password--Row']}>
+              <div className={['col-12']}>
+                  <div className={styles['reset-Password--Link']}><a href="">Forgot Password</a></div>
+              </div>
+            </div>
+
+            <div className={['row'] + " " + styles['new-Member--Row']}>
+              <div className={['col']}>
+                  <div className={styles['footer-Text']}>Not a member?</div>
+              </div>
+              <div className={['col']}>
+                <div className={styles['create-Account']}><a href="">Join For Free</a></div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1341,6 +1434,8 @@ const Nav = () => (
 
 
 </div>
+
+
 
 
 )
