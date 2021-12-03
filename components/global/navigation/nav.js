@@ -951,13 +951,15 @@ const Nav = () => (
 
             <form action="">
               <div className={styles['input-box']}>
-                <input type="search" name="Search Store" id={styles['search-Results-Input']} placeholder="Search Store..."/>
+
+                <input type="search" id={['search-Results-Input']} className={['form-control'] + " " + styles['form-control--Style']} placeholder="Search Store..." aria-describedby="searchStore"/>
               </div>
             </form>
 
           </div>
         </div>
 
+                {/* <input type="search" name="Search Store" id={['search-Results-Input']} placeholder="Search Store..."/> */}
 
 
 

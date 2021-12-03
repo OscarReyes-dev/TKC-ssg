@@ -629,6 +629,7 @@
   /* display : none; */
   width : 100%;
   overflow-y : auto;
+  overflow-x: hidden;
   background : rgb(255, 255, 255);
   height : calc(100vh - 0px);
   position : fixed;
@@ -643,17 +644,18 @@
   }
   .search-Results-Overlay .close-Search-Btn {
   text-align : right;
-  padding : 5px 10px 0 0;
+  padding : 10px 20px 0 0;
   }
   .search-Results-Overlay .input-box {
   text-align : center;
+  padding: 0 3em;
   }
   .search-Results-Overlay #search-Results-Input {
-  width : 50%;
-  height : 50px;
-  padding-left : 2em;
-  border : rgb(202, 202, 202) solid 1px;
-  border-radius : 50px;
+    width : 50%;
+    height : 50px;
+    padding-left : 2em;
+    border : rgb(202, 202, 202) solid 1px;
+    border-radius : 50px;
   }
   .search-Results-Overlay .close-Search-Canvas--btn {
   padding : 0;
@@ -1049,6 +1051,7 @@
 
   .center-Popup{
     position: fixed;
+    bottom: auto;
     transform: translate(-50%,-50%)!important;
     transition: none!important;
     border-radius: 35px;
@@ -1063,11 +1066,13 @@
   } */
   .center-Popup .btn-primary {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 13px;
     background-color: #000000;
     font-weight: 600;
     border-radius: 50px;
     border: 2px  solid black;
+    padding: 5px 15px;
+  
   }
   .center-Popup .btn-primary:hover {
     color: rgb(255, 255, 255);
@@ -1110,7 +1115,7 @@
     background-color: #000000;
   }
   
-  .center-Popup .popup-Square .form-control--Style {
+ .form-control--Style {
     line-height: 2;
     color:rgb(71, 71, 71);
     border: 1px solid rgb(202, 202, 202);
@@ -1284,6 +1289,10 @@ text-align : center;
 border-radius : 15px;
 }
 
+.search-Results-Overlay .input-box {
+  text-align : center;
+  padding: 0 1em;
+  }
 
 
 .center-Popup{

@@ -23,8 +23,9 @@ const Footer = () => (
                 <div className={styles['input-box']}>
                 {/* <form action="" method=""> */}
                     
-                    <input type="email" name="email-signup" id={styles['newsletter']} placeholder="Email Address" />
-                     
+                    {/* <input type="email" name="email-signup" id={styles['newsletter']} placeholder="Email Address" /> */}
+                    <input type="email" id={styles['newsletter']} className={['form-control'] + " " + styles['form-control--Style']} placeholder="Search Store..." aria-describedby="searchStore"/>
+             
                 {/* </form> */}
 
                 </div>
