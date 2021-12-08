@@ -947,7 +947,7 @@ const Nav = () => (
    
 
         <div className={styles['input-Row'] + " " + ['row']}>
-          <div className={['col-12']}>
+          <div className={['col-12'] + " " + styles['input-Column']}>
 
             <form action="">
               <div className={styles['input-box']}>

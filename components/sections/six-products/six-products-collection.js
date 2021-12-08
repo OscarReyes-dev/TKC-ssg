@@ -79,8 +79,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
@@ -142,8 +142,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
@@ -204,8 +204,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
@@ -266,8 +266,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
@@ -331,8 +331,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
@@ -395,8 +395,8 @@ const Sixproductscollection = () => (
                 <div className={['add-Product-To-Cart--btn']}>
                   <div className={['centered--button']}>
                     <div className={styles['textbox-button']}>
-                      <button aria-label="Add to Cart" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a className={styles['icon']}>Add to Cart</a>
+                      <button aria-label="Quick Add" className={styles['add-To-Cart--Btn']}       type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <a className={styles['icon']}>Quick Add</a>
                       </button>
                     </div>
                   </div>
